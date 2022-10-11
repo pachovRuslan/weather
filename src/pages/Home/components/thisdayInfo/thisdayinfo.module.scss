@@ -1,0 +1,61 @@
+@import '../../../../styles/variables.scss';
+
+.this_day_info {
+    position: relative;
+    padding: 40px;
+    max-width: 750px;
+    width: 100%;
+    background: var(#{--components-background-default});
+    box-shadow: var(#{--card-shadow-default});
+    border-radius: $border-radius;
+    @media (max-width: 900px) {
+      
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    z-index: 1;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .indeicator,
+    .indeicator_name {
+        margin-right: 20px;
+    }
+
+    .indeicator {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+        border-radius: 50%;
+    }
+
+    .indeicator_name {
+        font-size: 14px;
+        color: $base_color;
+    }
+
+    .indeicator_value {
+        font-size: 14px;
+        color: var(#{--text-color-default});
+    }
+
+}
+
+.cloud_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
